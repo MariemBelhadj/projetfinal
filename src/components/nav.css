@@ -1,0 +1,200 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}.nave {
+    background-color: rgb(168, 89, 20);
+    width: auto;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.left {
+    display: flex;
+    align-items: center;
+}
+.nav{
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
+    color: aliceblue;
+    font-weight: bold;
+    position: relative;
+}
+
+.navSearch {
+    /*bech nestwi icon taa recherche wel input*/
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 208, 167);
+    border-radius: 20px;
+    padding: 0px 20px;
+    width: 220px;
+    height: 40px;
+    margin-left: 25px;
+
+}
+
+.navSearch input {
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    color: rgb(55, 53, 53);
+}
+
+.navSearch input::placeholder {
+    color: rgb(55, 53, 53);
+    font-size: 15px;
+}
+
+.navSearch svg {
+    color: rgb(168, 89, 20)
+}
+
+.Container {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.movie {
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.5);
+    width: 250px;
+    background-color: rgb(168, 89, 20);
+    margin: 1rem;
+    border-radius: 5px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0 0 20px 0;
+
+}
+
+.movie .poster {
+    width: 250px;
+    height: 250px;
+
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap: 20px;
+}
+
+
+
+.details .box {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.details .title {
+    width: 160px;
+    text-align: center;
+    font-size: 15px;
+    color: wheat;
+}
+
+.details .overview {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    max-height: 100%;
+    background-color: rgb(168, 89, 20);
+    opacity: 0.9;
+    color: white;
+    box-sizing: border-box;
+    padding: 1rem;
+    transition: all 0.4s ease-in-out;
+    overflow-y: auto;
+    transform: translateY(101%);
+
+}
+
+.details:hover .overview {
+    transform: translateY(0%)
+}
+
+.inputMovie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+
+.inputMovie input {
+    border: 3px solid  rgb(168, 89, 20);
+    background-color: rgb(255, 208, 167);
+    border-radius: 20px;
+    margin: 5px 0;
+    padding: 10px 5px;
+    width: 500px;
+}
+.inputMovie input::placeholder{
+    color:grey;
+    padding-left: 10px;
+    font-size:20px ;
+
+}
+.buttonMovie{
+    margin-left: 800px;
+}
+.buttonMovie button{
+    border: 3px solid  rgb(168, 89, 20);
+    background-color: rgb(168, 89, 20);
+    color: antiquewhite;
+    border-radius: 10px;
+    margin: 5px 0;
+    padding: 8px 5px;
+    width:100px;
+}
+.addMoviee{
+    text-align: center;
+    color:rgb(168, 89, 20);
+}
+.home{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.see{
+    border: 3px solid  white;
+    background-color: white ;
+    color: rgb(168, 89, 20);
+    border-radius: 10px;
+    margin: 5px ;
+    padding: 3px 2px;
+    width:100px;
+     
+}
+
+.btn-3{
+    border: 3px solid  white;
+    background-color: white ;
+    color: rgb(168, 89, 20);
+    border-radius: 10px;
+    margin: 5px ;
+    padding: 3px 2px;
+    width:100px;
+    top: 50%;
+   left: 200px !important;
+}
+.bouton{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
